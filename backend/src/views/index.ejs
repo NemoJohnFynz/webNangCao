@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link href="/tailwindcss.css" rel="stylesheet">
+
+</head>
+
+<body class="flex flex-row w-full">
+
+    <header class="sticky top-0 h-screen">
+        <%- include('components/header') %>
+    </header>
+    <div class="w-full">
+        <main class=" ">
+
+            <%- include(page) %>
+        </main>
+        <div>
+            <%- include ('components/chat') %>
+        </div>
+        <footer class="">
+            <%- include ('components/footer') %>
+        </footer>
+    </div>
+
+</body>
+
+</html>
